@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Welcome to SIMPLE API</title>
+        <style>
+        body{
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .message{
+            width:700px;
+            padding:10px 20px;
+            margin:0 auto;
+            background-color:#f9f9f9;
+            border:1px solid #ddd;
+        }
+        center{
+            margin:40px 0;
+        }
+        h1{
+            font-size: 30px;
+            line-height: 26px;
+            text-align: center;
+        }
+        p{
+            font-size: 12px;
+        }
+        .space {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="message">
+            <h1>SimpleAPI</h1>
+            <p><b>SETUP HA API TOKEN</b></p>
+            <p><a href='/token.php'>ADD TOKEN</a></p>
+            </br>
+            <p><b>SETUP HA INSTALLATION</b></p>
+
+            <p><a href='/server.php'>ADD SERVER AND PORT</a></p>
+            <p>If not set manually homeassistant.local:8123 will be used!</p>
+            </br>
+            <p><b>USAGE:</b></p>
+            <p><i>GETPLAINVALUE</i></p>
+            <BLOCKQUOTE>
+                <p>returns only state value as plain text from JSON</p>
+                <p>http://IP-ADDRESS:PORT/getPlainValue.php?name=HOME_ASSISTENT_SENSOR</p>
+            </BLOCKQUOTE>
+
+            <p><i>GET</i></p>
+            <BLOCKQUOTE>
+                <p>returns JSON</p>
+                <p>http://IP-ADDRESS/get.php?name=HOME_ASSISTENT_SENSOR</p>
+            </BLOCKQUOTE>
+
+            <p><i>SET</i></p>
+            <BLOCKQUOTE>
+                <p>http://IP-ADDRESS:PORT/set.php?entity=HOME_ASSISTENT_ENTITY&cmd=HOME_ASSISTENT_COMMAND</p>
+            </BLOCKQUOTE>
+        </div>
+        <div class="space">
+        </div>
+        <div>
+              <footer>
+                <p>Author: Andy Grundt</p>
+                <p><a href="mailto:andygrundt@gmail.com">andygrundt@gmail.com</a></p>
+              </footer>
+        </div>
+    </body>
+</html>
